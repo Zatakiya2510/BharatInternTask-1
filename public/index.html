@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/sign_up" method="POST">
+            <h2> Registration Form</h2>
+            <input type="text" class="box" id="name" name="name" placeholder="Name" required>
+            <br>
+            <input type="number" class="box" id="age" name="age" placeholder="Age" required>
+            <br>
+            <input type="email" class="box" id="email" name="email" placeholder="EmailId"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br>
+            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Mobile Number" required> <br>
+            <input type="text" class="box" id="gender" name="gender" placeholder="Gender" required>
+            <br>
+            <input type="password" class="box" id="password" name="password" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
